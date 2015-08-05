@@ -13,3 +13,5 @@ depend.hadoop() ++ Seq(
 )
 
 uniformThriftSettings
+
+scalacOptions in (Compile, console) ~= (_ filterNot (_ == "-Ywarn-unused-import"))
