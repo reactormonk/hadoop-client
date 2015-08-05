@@ -1,6 +1,6 @@
 uniform.project("hadoop-client", "com.oaganalytics")
 
-uniformDependencySettings
+uniformPublicDependencySettings
 
 strictDependencySettings
 
