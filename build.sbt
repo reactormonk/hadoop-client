@@ -8,6 +8,8 @@ scalaVersion := "2.11.7"
 
 libraryDependencies :=
   depend.hadoopClasspath ++
-  depend.hadoop("2.0.0-cdh4.2.0")
+depend.hadoop() ++ Seq(
+  "au.com.cba.omnia" %% "permafrost" % "0.10.0-20150729223234-1f86afc"
+)
 
 uniformThriftSettings
